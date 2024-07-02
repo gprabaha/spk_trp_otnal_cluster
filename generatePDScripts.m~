@@ -1,0 +1,36 @@
+function generatePDScripts(IDStr,regionStr)
+%FINDTRIPLETS Summary of this function goes here
+%   Detailed explanation goes here
+
+
+
+try
+    % Load the configuration file
+    [cfg] = SPKTRP_getConfig();
+    
+    % Putative directory with data for this session
+    sessionPath = fullfile(cfg.spkDataDir, IDStr);
+    
+    % Format the path for saving the triplets
+    savePath = fullfile(sessionPath, sprintf('%s_%s_genShuffTrips.m', IDStr, regionStr));
+    
+    if ~isfile(savePath)
+        
+        % Find the triplets
+        = generatePerDayScript(inputArg1,inputArg(IDStr, regionStr);
+        
+        % Save the triplet structure
+        save(savePath, 'shuffledTriplets')
+        
+        fprintf('Finished: %s\n', savePath);
+    
+    else
+        fprintf('Already exists: %s\n', savePath);
+    end
+    
+catch saveErr
+    fprintf('Could not save extracted spike triplets from %s:\n\t--->\t%s!\n', IDStr, saveErr.message);
+end
+
+end
+
