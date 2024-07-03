@@ -5,8 +5,8 @@ function  generatePerDayShell(jobName, savePath, matPath)
 FID = fopen(savePath, 'w');
 
 fprintf(FID, '%s\n', '#!/bin/bash');
-fprintf(FID, '%s\n', '#SBATCH --partition=verylong');
-fprintf(FID, '%s\n', '#SBATCH --time=168:00:00');
+fprintf(FID, '%s\n', '#SBATCH --partition=psych_week');
+fprintf(FID, '%s\n', '#SBATCH --time=7-00:00:00');
 fprintf(FID, '#SBATCH --job-name=%s\n', jobName);
 fprintf(FID, '%s\n', '#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=28');
 fprintf(FID, '%s\n', '#SBATCH --mem-per-cpu=8192');
