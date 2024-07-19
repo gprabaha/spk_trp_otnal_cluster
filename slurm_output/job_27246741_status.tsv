@@ -1,0 +1,3 @@
+3	0	r812u31n01.milgram.ycrc.yale.edu	2024-07-15 15:20:47	2024-07-17 21:30:13	194966.43	module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01082019_dmpfc.m');"
+2	0	r811u34n02.milgram.ycrc.yale.edu	2024-07-15 15:20:44	2024-07-18 00:08:49	204484.62	module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01082019_bla.m');"
+0	0	r811u32n03.milgram.ycrc.yale.edu	2024-07-15 15:20:46	2024-07-18 14:30:20	256174.21	module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01052019_bla.m');"

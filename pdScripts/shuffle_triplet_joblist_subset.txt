@@ -1,0 +1,4 @@
+module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01052019_bla.m');"
+module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01072019_bla.m');"
+module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01082019_bla.m');"
+module load miniconda; module load MATLAB/2017a; matlab -nodisplay -nosplash -r "run('pdScripts/GST_01082019_dmpfc.m');"
