@@ -1,0 +1,13 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2022 The MathWorks, Inc.
+             R2022b Update 1 (9.13.0.2080170) 64-bit (glnxa64)
+                             September 28, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Batch script generated. To submit your jobs, run:
+ sbatch /gpfs/milgram/pi/chang/pg496/repositories/spk_trp_otnal_cluster/pdScripts/dsq_batchfile.sh
+Submitted batch job 27349589
