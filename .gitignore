@@ -1,3 +1,4 @@
 *.mat
 *.out
 *.err
+*.m~
