@@ -1,14 +1,11 @@
 function batchGeneratePDScripts()
-
     [cfg] = SPKTRP_getConfig();
     dataDirStruct = dir(cfg.spkDataDir);
     count = 0;
     jobFilePath = fullfile(pwd, 'pdScripts', 'shuffle_triplet_joblist.txt');
-    
     % Create or clear the job file
     fidJobFile = fopen(jobFilePath, 'w');
     fclose(fidJobFile);
-    
     for i = 1:size(dataDirStruct, 1)
         if dataDirStruct(i).name(1) ~= '.'
             try
@@ -30,8 +27,6 @@ function batchGeneratePDScripts()
             end
         end
     end
-    
     % Generate and submit the dsq submission script
     generateAndSubmitDsqShell(jobFilePath);
-    
 end
